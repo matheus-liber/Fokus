@@ -2,19 +2,19 @@ import { Pressable, StyleSheet, Text } from "react-native"
 
 export const ActionButton = ({ active, onPress, display }) => {
     return (
-        <Pressable 
-              style={ active ? styles.contextButtonTextActice : null}
-              onPress={onPress}
-            >
+        <Pressable
+            style={active ? styles.contextButtonActive : null}
+            onPress={onPress}
+        >
             <Text style={styles.contextButtonText}>
-              {display}
+                {display}
             </Text>
-          </Pressable>
+        </Pressable>
     )
 }
 
 const styles = StyleSheet.create({
-  contextButtonTextActice: {
+  contextButtonActive: {
     backgroundColor: '#144480',
     borderRadius: 8
   },
